@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+nav,
+footer {
+    padding: 1% 0;
+    background-color: #aaa;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navbar, #navbar2 {
+    overflow: hidden;
+}
+
+#pfp {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.first {
+  height:50px;
+  position:sticky;
+  top:0;
+}
+
+.second {
+  height:50px;
+  position:sticky;
+  top:50px;
+}
+
+header {
+    padding: 12% 0;
+}
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+/*project container*/
+.project {
+    min-height: 200px;
+    background-color: lightgray;
+    padding-bottom: 25px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+    background-color: #bbb;
+    min-height: 200px;
+}
+
+.links-repo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links-repo h4 {
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #bbb;
+    width: 100px;
+}
+
+.contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background-color: #bbb;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        font-size: 30px;
+        height: 100%;
+    }
+    main, #pfp, footer {
+        margin-left: 100px;
+    }
+
+
+    .first {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    .second {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    section h1 {
+        height: 60px;
+        position:sticky;
+        top:0px;
+        background-color: #ddd;
+        margin: 0;
+    }
+    #pfp {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+
+}

@@ -104,18 +104,10 @@ section:nth-child(even) {
     background-color: #ffd1b2;
 }
 
-/*project container*/
 .project {
     min-height: 200px;
     background-color: #b2d0ff;
     padding-bottom: 25px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffe4b2;
 }
 
 .links-repo {
@@ -497,4 +489,118 @@ h2 {
         font-size: 50px;
     }
 
+}
+
+@media screen and (min-width: 1439px) {
+    #about-me, #projects{
+        margin-bottom: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        font-size: 42px;
+        height: 100%;
+    }
+    main, #pfp, footer {
+        margin-left: 100px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links li a{
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .first {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        bottom: 0;
+        position: fixed;
+        background-color: #b2ffe1;
+    }
+    .second {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        top: 120px;
+        bottom: 0;
+        position: fixed;
+    }
+    section h1 {
+        height: 120px;
+        position:sticky;
+        background-color: #b2d0ff;
+        top:0px;
+        margin: 0 auto;
+        padding-bottom: 6% 0;
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    section {
+        border: 1px solid black;
+    }
+
+    p {
+        position: relative;
+        margin-top: 45px;
+        font-size: 32px;
+        line-height: 2em;
+        word-spacing: 145%;
+    }
+
+    .about-me p{
+        padding-top: 180px;
+    }
+
+    .square {
+        width: 100px;
+        height: 80px;
+        position: relative;
+
+    }
+
+    .img {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100rem;
+    }
+
+    #pfp {
+        top: 32rem;
+        position: absolute;
+        border-radius: 0;
+        border: 5px solid #b2ffe1;
+    }
+
+    header {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    h2{
+        margin-top: 40px;
+    }
+
+    .button {
+        margin-top: 25px;
+        width: 180px;
+        height: 45px;
+        font-size: 28px;
+    }
+
+    .desc h5 {
+        font-size: 50px;
+    }
 }

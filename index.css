@@ -3,19 +3,19 @@
   }
 
 body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
+    font-family: 'Gentium Basic',
+    serif; 
+    font-size: 24px;
     color: #444;
     text-align: center;
     line-height: 1.5;
     margin: 0;
+    background-color: #ffb2c1;
 }
 
-nav,
 footer {
-    padding: 1% 0;
-    background-color: #aaa;
+    padding: 1% 0 0 0;
+    background-color:#b2d0ff;
 }
 
 nav {
@@ -37,15 +37,57 @@ nav {
 }
 
 .first {
-  height:50px;
   position:sticky;
   top:0;
+  background-color: #ffd1b2;
+  z-index:1;
 }
 
 .second {
-  height:50px;
   position:sticky;
-  top:50px;
+  top:35px;
+  background-color: #b2ffe1;
+  z-index:1;
+}
+
+main header {
+    padding-top: 70px;
+}
+
+#about-me {
+    margin-bottom: 70px;
+}
+
+#projects {
+    margin-bottom: 70px;
+}
+
+
+.links {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 0 0 5px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.links li a{
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 1.5em;
+    word-spacing: 145%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 header {
@@ -55,17 +97,17 @@ header {
 section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: #bbb;
+    background-color: #b2d0ff;
 }
 
 section:nth-child(even) {
-    background-color: #ddd;
+    background-color: #ffd1b2;
 }
 
 /*project container*/
 .project {
     min-height: 200px;
-    background-color: lightgray;
+    background-color: #b2d0ff;
     padding-bottom: 25px;
 }
 
@@ -73,16 +115,15 @@ section:nth-child(even) {
 .slideshow-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 250px;
-    background-color: #bbb;
-    min-height: 200px;
+    background-color: #ffe4b2;
 }
 
 .links-repo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
 
 .links-repo h4 {
     margin-left: 25px;
@@ -92,14 +133,154 @@ section:nth-child(even) {
 }
 
 .contact-form {
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 200px;
+    margin-bottom: 20px;
+    height: 9em;
+    width: 13em;
     background-color: #bbb;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+h2 {
+    padding-top: 15px;
+}
+
+.contact-form h2 {
+    font-size: 20px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+}
+
+.content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: #b2ffe1;
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: 700px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.content-info img {
+    height: 40px;
+}
+
+.content-info .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border:none;
+    min-height: 0;
+    padding: 10px 0 0 0;
+}
+
+.content-info p {
+    margin:0;
+    text-align: center;
+}
+
+.fling-minislide, .fling-minislide-two {
+    display: flex;
+    justify-content: center;
+    width:100%; 
+    height:0px; 
+    padding-bottom: 50%;
+    overflow:hidden;
+    position: relative;
+
+}
+
+.fling-minislide img{ 
+    position:absolute; 
+    animation:fling-minislide 20s infinite; 
+    opacity:0;
+    width: 100%;
+    height: auto;
+}
+
+.fling-minislide-two img { 
+    position:absolute; 
+    animation:fling-minislide 25s infinite; 
+    opacity:0;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fling-minislide {
+    25%{
+        opacity:1;
+    } 40%{
+        opacity:0;
+    }
+}
+
+@keyframes fling-minislide-two {
+    25%{
+        opacity:1;
+    } 40%{
+        opacity:0;
+    }
+}
+
+.fling-minislide-two img:nth-child(6){
+    animation-delay:0s;
+}
+
+.fling-minislide-two img:nth-child(5){
+    animation-delay:5s;
+}
+
+.fling-minislide-two img:nth-child(4){
+    animation-delay:10s;
+}
+.fling-minislide-two img:nth-child(3){
+    animation-delay:15s;
+}
+.fling-minislide-two img:nth-child(2){
+    animation-delay:20s;
+}
+.fling-minislide-two img:nth-child(1){
+    animation-delay:25s;
+}
+
+.fling-minislide img:nth-child(5){
+    animation-delay:0s;
+}
+
+.fling-minislide img:nth-child(4){
+    animation-delay:5s;
+}
+.fling-minislide img:nth-child(3){
+    animation-delay:10s;
+}
+.fling-minislide img:nth-child(2){
+    animation-delay:15s;
+}
+.fling-minislide img:nth-child(1){
+    animation-delay:20s;
+}
+
+.logos a:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #about-me, #projects{
+        margin-bottom: 0;
+    }
+
     html {
         height: 100%;
     }
@@ -112,6 +293,16 @@ section:nth-child(even) {
         margin-left: 100px;
     }
 
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links li a{
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+    }
 
     .first {
         width: 100px;
@@ -119,28 +310,191 @@ section:nth-child(even) {
         right: auto;
         bottom: 0;
         position: fixed;
-        z-index: 1;
+        background-color: #b2ffe1;
     }
     .second {
         width: 100px;
         height: inherit;
         right: auto;
+        top: 100px;
         bottom: 0;
         position: fixed;
-        z-index: 1;
     }
     section h1 {
         height: 60px;
         position:sticky;
+        background-color: #b2d0ff;
         top:0px;
-        background-color: #ddd;
-        margin: 0;
+        margin: -6% 0;
+        padding-bottom: 6% 0;
+        z-index: 1;
+        border-bottom: 1px solid black;
     }
+
+    section {
+        border: 1px solid black;
+    }
+
+    p {
+        position: relative;
+        margin-top: 55px;
+        font-size: 24px;
+    }
+
+    .square {
+        width: 20rem;
+        height: 19.5rem;
+        float: left;
+    }
+
+    .img {
+        z-index: 0;
+        position: absolute;
+        top: 16rem;
+        left: 2rem;
+        width: 50%;
+        float: right;
+    }
+
     #pfp {
-        display: none;
+        border-radius: 0;
+        border: 5px solid #b2ffe1;
+        float: left;
     }
+
+    header {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    h2{
+        margin-top: 40px;
+    }
+
+    .button {
+        margin-top: 20px;
+        width: 150px;
+        height: 35px;
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
+    #about-me, #projects{
+        margin-bottom: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        font-size: 42px;
+        height: 100%;
+    }
+    main, #pfp, footer {
+        margin-left: 100px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links li a{
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .first {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        bottom: 0;
+        position: fixed;
+        background-color: #b2ffe1;
+    }
+    .second {
+        width: 100px;
+        height: inherit;
+        right: auto;
+        top: 120px;
+        bottom: 0;
+        position: fixed;
+    }
+    section h1 {
+        height: 120px;
+        position:sticky;
+        background-color: #b2d0ff;
+        top:0px;
+        margin: 0 auto;
+        padding-bottom: 6% 0;
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    section {
+        border: 1px solid black;
+    }
+
+    p {
+        position: relative;
+        margin-top: 45px;
+        font-size: 32px;
+        line-height: 2em;
+        word-spacing: 145%;
+    }
+
+    .about-me p{
+        padding-top: 180px;
+    }
+
+    .square {
+        width: 100px;
+        height: 80px;
+        position: relative;
+
+    }
+
+    .img {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100rem;
+    }
+
+    #pfp {
+        top: 28rem;
+        position: absolute;
+        border-radius: 0;
+        border: 5px solid #b2ffe1;
+    }
+
+    header {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    h2{
+        margin-top: 40px;
+    }
+
+    .button {
+        margin-top: 25px;
+        width: 180px;
+        height: 45px;
+        font-size: 28px;
+    }
+
+    .desc h5 {
+        font-size: 50px;
+    }
 
 }

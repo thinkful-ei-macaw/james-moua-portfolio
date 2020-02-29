@@ -4,60 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-        <nav class="first" role="navigation">Nav</nav>
-        <img id="pfp" src="" alt="James's profile picture">
-        <nav class="second" role="navigation">Nav</nav>
+        <nav class="first" role="navigation">
+            <ul class="links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="img">
+            <img id="pfp" src="img/Temp PFP.jpg" alt="James's profile picture">
+        </div>
+        <nav class="second" role="navigation">
+            <ul class="links">
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
     <main>
         <header role="heading">Hi, I'm James. I am a software development enthusiast</header>
 
+        <nav id="about-me"></nav>
         <section class="about-me">
             <h1>About Me</h1>
-            <hr/>
-            <p>I am a full-time student at Thinkful, learning about various web developments and building projects</p>
+            <div class="square"></div>
+            <p>I am a current student of the Engineering Immersion Bootcamp at Thinkful, studying about various web development subjects such as Interactive Web Apps, Asynchronous web apps, Client-side programming with React, Server-side programmming with Node and Postgres, and Authentication with JWT.
+                <br/>
+                <br/>
+                I love and hate coding. Coding did not cross my mind until I saw that it could solve most problems and make most ideas come to life. I was amazed by thefact that a programmer can develop projects which could change people's lives and their own career. After learning how to code for some time now, I came to understand that coding is difficult, but also comprehensible over time as you learn more about coding and its nature. Sometimes I would get overwhelmingly excited about solving a coding obstacle that prevented me from finishing the project that I was working on. Learning that I can code, I set my goals to have a skillset for the current job market, preparing myself to work alongside other developers and pursue a career as a programmer.
+                <br/>
+                <br/>
+                When I'm not coding, I'm often found on my computer watching Japanese Animated TV series (Anime), updating my music playlist, playing video games, working out, or studying topics which intrigue me such as stocks trading or investing. Even though I do not have background in techonology, I am still a lifelong learner. As a lifelong learner, I look forward to coding, learning more about coding, and working on projects with coding.
+            </p>
         </section>
         
-        <section>
+        <nav id="projects"></nav>
+        <section class="project-container">
             <h1>Projects</h1>
 
             <div class="project">
-                <h2>Project Title</h2>
+                <h2>Quiz App</h2>
 
                 <div class="slideshow-container">
-                    <h3>Carousel Slideshow</h3>
+                    <div class="fling-minislide">
+                        <img src="img/quiz/Math Quiz - Fail.JPG" alt="Slide 6" />
+                        <img src="img/quiz/Math Quiz - Passed.JPG" alt="Slide 5" />
+                        <img src="img/quiz/Math Quiz - Wrong.JPG" alt="Slide 4" />
+                        <img src="img/quiz/Math Quiz - Question.JPG" alt="Slide 3" />     
+                        <img src="img/quiz/Math Quiz - Correct.JPG" alt="Slide 2" />
+                        <img src="img/quiz/Math Quiz - Start.JPG" alt="Slide 1" />
+                    </div>
                 </div>
+
+                <div class="desc">
+                    <h5>Project Title: Quiz App</h5>
+                    <p>Project Description:
+                        Create an App that renders a quiz for the user. The user should able to start the quiz, answer a question, receive feedback whether their answer was correct, receive their total score, receive feedback whether they passed, and restart the quiz.
+                        <br/>
+                        <br/>
+                        This project should only use javascript generate templates and not have any html code in the html file.
+                    </p>
+                </div>
+
                 <div class="links-repo">
-                    <h4>repo</h4>
-                    <h4>live page</h4>
+                    <button type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/quizzapp2-13-SJ")' class="button">Repo</button>
+                    <button type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/quizzapp2-13-SJ/")' class="button">Live Page</button>
                 </div>
             </div>
 
             <div class="project">
-                <h2>Project Title</h2>
+                <h2>Bookmarks App</h2>
 
-                <div class="slideshow-container">
-                    <h3>Carousel Slideshow</h3>
+                    <div class="fling-minislide-two">
+                        <img src="img/bookmarks/Bookmarks - Add New.JPG" alt="Slide 5" />
+                        <img src="img/bookmarks/Bookmarks - Edit.JPG" alt="Slide 4" />
+                        <img src="img/bookmarks/Bookmarks - Clicked.JPG" alt="Slide 3" />     
+                        <img src="img/bookmarks/Bookmarks - Filter.JPG" alt="Slide 2" />
+                        <img src="img/bookmarks/Bookmarks - Landing.JPG" alt="Slide 1" />
+                    </div>
+
+                <div class="desc">
+                    <h5>Project Title: Bookmarks App</h5>
+                    <p>Project Description:
+                        Create an App that uses Thinkful's bookmark's API to store and send user's bookmarks. The user should be able to add new bookmarks to the list, edit a bookmark that has previously been added to the list, delete a bookmark from the list. The user should also be able to see validations to avoid empty inputs, the page updates while information is being submitted, responsive design being added to different viewports, and a filter option that displays all ratings greater than or equal to selected rating.
+                        <br/>
+                        <br/>
+                        This project was built using webpack, git subtree method, and javascript modules without having any html code in the html file.
+                        </p>
                 </div>
+
                 <div class="links-repo">
-                    <h4>repo</h4>
-                    <h4>live page</h4>
+                    <button type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/JamesMoua-bookmarks-app/tree/gh-pages")' class="button">Repo</button>
+                    <button type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/JamesMoua-bookmarks-app/")' class="button">Live Page</button>
                 </div>
             </div>
         </section>
 
+        <nav id="contact"></nav>
         <section>
             <h1>Contact</h1>
             <div class="contact-form">
-                <h2>Form</h2>
+                <h2>Sorry, the form is broken</h2>
+                <h3>But you can contact me at <a href="mailto:Smoua1558@gmail.com?Subject=Inquiry">Smoua1558@gmail.com</a>
+                    <br>
+                    <br>
+                    or at the links provided below
+                </h3>
             </div>
         </section>
     </main>
 
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info" class="content-info">
+        <section class="logos">
+            <a onclick="window.open('https://www.linkedin.com/in/james-moua-b16a33185/')"><img src="img/LI-Logo.png" alt="linkedin logo"></a>
+            <a onclick="window.open('https://github.com/huehealer')"><img src="img/GitHub_Logo.png" alt="github logo"></a>
+        </section>
+        <p>&copy; James Moua</p>
+    </footer>
 
     <script type="text/javascript" src="index.js"></script>
 </body>

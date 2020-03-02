@@ -9,20 +9,20 @@
 </head>
 <body>
     <header class="header">
-        <img src="img/Temp PFP.jpg" alt="Photo of James" id="pfp">
+        <img src="img/Temp-PFP.jpg" alt="Photo of James" id="pfp">
         <h1 class="heading">Hi, I'm James. I am a software development ethusist</h1>
     </header>
 
     <main>
         <nav class="nav" aria-label="Main">
-            <ul class="nav-links" role="list">
-                <li role="listitem">
+            <ul class="nav-links">
+                <li>
                     <a href="#about-me">About Me</a>
                 </li>
-                <li role="listitem">
+                <li>
                     <a href="#projects">Projects</a>
                 </li>
-                <li role="listitem">
+                <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -57,7 +57,7 @@
             <section class="projects-container">
                 <div class="project-desc" role="article">
                     <h2 class="project-title">Project Title: <br/> Quiz App</h2>
-                    <img role="img" src="img/quiz/MathQuiz-Question.JPG" alt="Quiz App img" class="project-img">
+                    <img src="img/quiz/MathQuiz-Question.JPG" alt="Quiz App img" class="project-img">
                     <p class="description">
                     Project Description: Create an App that renders a quiz for the user. 
                     The user should able to start the quiz, answer a question, receive feedback whether their answer was correct, receive their total score, 
@@ -69,15 +69,15 @@
                     Javascript, JQuery, HTML5, CSS3, NPM
                     </p>
                 </div>
-                <section class="project-buttons">
+                <div class="project-buttons">
                     <button aria-pressed="false" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/quizzapp2-13-SJ")' class="buttons">Repo</button>
                     <button aria-pressed="false" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/quizzapp2-13-SJ/")' class="buttons">Live Page</button>
-                </section>
+                </div>
             </section>
             <section class="projects-container">
                 <div class="project-desc">
                     <h2 class="project-title">Project Title:<br/> Bookmarks App</h2>
-                    <img role="img" src="img/bookmarks/Bookmarks - Filter.JPG" alt="Bookmarks App img" class="project-img">
+                    <img src="img/bookmarks/Bookmarks-Filter.JPG" alt="Bookmarks App img" class="project-img">
                     <p class="description">
                         Project Description: Create an App that uses Thinkful's bookmark's API to store and send user's bookmarks. 
                         The user should be able to add new bookmarks to the list, edit a bookmark that has previously been added to the list,
@@ -91,10 +91,10 @@
                         Javascript, JQuery, HTML, CSS, NPM
                     </p>
                 </div>
-                <section class="project-buttons">
-                    <button role="button" aria-pressed="false" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/JamesMoua-bookmarks-app/tree/gh-pages")' class="buttons">Repo</button>
-                    <button role="button" aria-pressed="false" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/JamesMoua-bookmarks-app/")' class="buttons">Live Page</button>
-                </section>
+                <div class="project-buttons">
+                    <button aria-pressed="false" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/JamesMoua-bookmarks-app/tree/gh-pages")' class="buttons">Repo</button>
+                    <button aria-pressed="false" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/JamesMoua-bookmarks-app/")' class="buttons">Live Page</button>
+                </div>
             </section>
         </section>
         <nav id="contact"></nav>
@@ -107,10 +107,10 @@
     </main>
     
     <footer>
-        <section class="links">
+        <div class="links">
             <a onclick="window.open('https://www.linkedin.com/in/james-moua-b16a33185/')"><img role="link" src="img/LI-Logo.png" alt="Linkedin Logo" id="link-logo"></a>
             <a onclick="window.open('https://github.com/huehealer')"><img role="link" src="img/GitHub_Logo.png" alt="Github Logo" id="github-logo"></a>
-        </section>
+        </div>
         <p class="copyright-symbol">&copy; James Moua 2020</p>
     </footer>
 </body>

@@ -1,158 +1,91 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+header {
+    background-color: #ffb2c1;
+    margin: 0 -20px;
+}
 
 body {
     font-family: 'Gentium Basic',
     serif; 
-    font-size: 24px;
-    color: #444;
+    font-size: 16px;
+    background-color: #b2d0ff;
+    margin: 0px 20px;
+    padding: 0;
     text-align: center;
-    line-height: 1.5;
-    margin: 0;
-    background-color: #ffb2c1;
-}
-
-footer {
-    padding: 1% 0 0 0;
-    background-color:#b2d0ff;
-}
-
-nav {
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#navbar, #navbar2 {
-    overflow: hidden;
+    color: #444;
 }
 
 #pfp {
-    height: 250px;
-    width: 250px;
+    margin-top: 75px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border: 5px solid #b2ffe1;
 }
 
-.first {
-  position:sticky;
-  top:0;
-  background-color: #ffd1b2;
-  z-index:1;
-}
-
-.second {
-  position:sticky;
-  top:35px;
-  background-color: #b2ffe1;
-  z-index:1;
-}
-
-main header {
-    padding-top: 70px;
-}
-
-#about-me {
-    margin-bottom: 70px;
-}
-
-#projects {
-    margin-bottom: 70px;
-}
-
-
-.links {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: space-around;
-    padding: 0 0 5px 0;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.links li a{
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 16px;
-    font-weight: 550;
-    line-height: 1.5em;
-    word-spacing: 145%;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-header {
-    padding: 12% 0;
-}
-
-section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #b2d0ff;
-}
-
-section:nth-child(even) {
-    background-color: #ffd1b2;
-}
-
-.project {
-    min-height: 200px;
-    background-color: #b2d0ff;
+.heading {
+    margin-top: 15px;
     padding-bottom: 25px;
 }
 
-.links-repo {
+.bio, .projects-title{
+    background-color: #b2d0ff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    margin-top: -20px;
+    width: 100%;
+}
+
+.nav-links {
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0 -20px;
+    background-color: #b2ffe1;
+}
+
+.nav ul li{
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.bio-desc, .description {
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 550;
+    line-height: 1.5em;
+    word-spacing: 145%;
+}
+
+.projects-title {
+    background-color: #ffb2c1;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.project-img{
+    width:100%;
+}
+
+.project-buttons {
+    display: flex;
     justify-content: space-evenly;
 }
 
-
-.links-repo h4 {
-    margin-left: 25px;
-    margin-right: 25px;
-    background-color: #bbb;
-    width: 100px;
-}
-
-.contact-form {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    height: 9em;
-    width: 13em;
-    background-color: #bbb;
-}
-
-h2 {
-    padding-top: 15px;
-}
-
-.contact-form h2 {
-    font-size: 20px;
-}
-
-.contact-form h3 {
-    font-size: 24px;
-}
-
-.content-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.button {
+.buttons {
     background-color: #b2ffe1;
     width: 100px;
     height: 25px;
@@ -163,444 +96,202 @@ h2 {
     margin-top: 10px;
 }
 
-.content-info img {
-    height: 40px;
+.contact {
+    padding-top:2.5vh;
+    height: 82.5vh;
 }
 
-.content-info .logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border:none;
-    min-height: 0;
-    padding: 10px 0 0 0;
-}
-
-.content-info p {
-    margin:0;
-    text-align: center;
-}
-
-.fling-minislide, .fling-minislide-two {
+.contact-container {
+    height: 50vh;
     display: flex;
     justify-content: center;
-    width:100%; 
-    height:0px; 
-    padding-bottom: 50%;
-    overflow:hidden;
-    position: relative;
-
+    align-items: center;
 }
 
-.fling-minislide img{ 
-    position:absolute; 
-    animation:fling-minislide 20s infinite; 
-    opacity:0;
-    width: 100%;
-    height: auto;
+footer {
+    border: 1px solid black;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
-.fling-minislide-two img { 
-    position:absolute; 
-    animation:fling-minislide 25s infinite; 
-    opacity:0;
-    width: 100%;
-    height: auto;
+.links {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-@keyframes fling-minislide {
-    25%{
-        opacity:1;
-    } 40%{
-        opacity:0;
-    }
+.links a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
 
-@keyframes fling-minislide-two {
-    25%{
-        opacity:1;
-    } 40%{
-        opacity:0;
-    }
+#link-logo {
+    width: 60%;
 }
 
-.fling-minislide-two img:nth-child(6){
-    animation-delay:0s;
-}
-
-.fling-minislide-two img:nth-child(5){
-    animation-delay:5s;
-}
-
-.fling-minislide-two img:nth-child(4){
-    animation-delay:10s;
-}
-.fling-minislide-two img:nth-child(3){
-    animation-delay:15s;
-}
-.fling-minislide-two img:nth-child(2){
-    animation-delay:20s;
-}
-.fling-minislide-two img:nth-child(1){
-    animation-delay:25s;
-}
-
-.fling-minislide img:nth-child(5){
-    animation-delay:0s;
-}
-
-.fling-minislide img:nth-child(4){
-    animation-delay:5s;
-}
-.fling-minislide img:nth-child(3){
-    animation-delay:10s;
-}
-.fling-minislide img:nth-child(2){
-    animation-delay:15s;
-}
-.fling-minislide img:nth-child(1){
-    animation-delay:20s;
-}
-
-.logos a:hover {
-    cursor: pointer;
+#github-logo {
+    width: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    #about-me, #projects{
-        margin-bottom: 0;
-    }
-
-    html {
-        height: 100%;
-    }
-
     body {
-        font-size: 30px;
-        height: 100%;
-    }
-    main, #pfp, footer {
-        margin-left: 100px;
-    }
-
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links li a{
         font-size: 20px;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .first {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        bottom: 0;
-        position: fixed;
-        background-color: #b2ffe1;
-    }
-    .second {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        top: 100px;
-        bottom: 0;
-        position: fixed;
-    }
-    section h1 {
-        height: 60px;
-        position:sticky;
-        background-color: #b2d0ff;
-        top:0px;
-        margin: -6% 0;
-        padding-bottom: 6% 0;
-        z-index: 1;
-        border-bottom: 1px solid black;
-    }
-
-    section {
-        border: 1px solid black;
-    }
-
-    p {
-        position: relative;
-        margin-top: 55px;
-        font-size: 24px;
-    }
-
-    .square {
-        width: 20rem;
-        height: 19.5rem;
-        float: left;
-    }
-
-    .img {
-        z-index: 0;
-        position: absolute;
-        top: 16rem;
-        left: 2rem;
-        width: 50%;
-        float: right;
-    }
-
-    #pfp {
-        border-radius: 0;
-        border: 5px solid #b2ffe1;
-        float: left;
+        margin: 0 45px;
     }
 
     header {
-        margin-right: 5px;
-        margin-left: 5px;
+        padding-top: 1px;
+        margin: 0 -45px;
     }
 
-    h2{
-        margin-top: 40px;
+    .nav {
+        margin-top: -50px;
     }
 
-    .button {
+    .nav-links {
+        margin: 0 -45px;
+    }
+
+    .nav ul li{
+        font-size: 30px;
+    }
+    
+    #pfp {
+        z-index: 0;
+        position: absolute;
+        top: 14rem;
+        left: 2.5rem;
+        height: 300px;
+        width: 300px;
+        float: right;
+        border-radius: 0;
+    }
+    .square {
+        width: 20rem;
+        height: 20rem;
+        float: left;
+    }
+
+    .bio, .projects-title{
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    .projects-title {
+        background-color: #ffb2c1;
+        margin-right: -45px;
+        margin-left: -45px;
+    }
+
+    .bio-desc, .description {
+        font-size: 24px;
+    }
+
+    .buttons {
         margin-top: 20px;
         width: 150px;
         height: 35px;
         font-size: 24px;
     }
 
-    h5 {
-        font-size: 28px;
+    footer {
+        margin-left: -45px;
+        margin-right: -45px;
     }
 
+    .contact {
+        padding-top:10vh;
+        height: 87vh;
+    }
+
+    #link-logo {
+        width: 30%;
+    }
+    
+    #github-logo {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    #about-me, #projects{
-        margin-bottom: 0;
-    }
-
-    html {
-        height: 100%;
-    }
-
     body {
         font-size: 42px;
-        height: 100%;
-    }
-    main, #pfp, footer {
-        margin-left: 100px;
-    }
-
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links li a{
-        font-size: 24px;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .first {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        bottom: 0;
-        position: fixed;
-        background-color: #b2ffe1;
-    }
-    .second {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        top: 120px;
-        bottom: 0;
-        position: fixed;
-    }
-    section h1 {
-        height: 120px;
-        position:sticky;
-        background-color: #b2d0ff;
-        top:0px;
-        margin: 0 auto;
-        padding-bottom: 6% 0;
-        z-index: 1;
-        border-bottom: 1px solid black;
-    }
-
-    section {
-        border: 1px solid black;
-    }
-
-    p {
-        position: relative;
-        margin-top: 45px;
-        font-size: 32px;
-        line-height: 2em;
-        word-spacing: 145%;
-    }
-
-    .about-me p{
-        padding-top: 180px;
-    }
-
-    .square {
-        width: 100px;
-        height: 80px;
-        position: relative;
-
-    }
-
-    .img {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100rem;
-    }
-
-    #pfp {
-        top: 28rem;
-        position: absolute;
-        border-radius: 0;
-        border: 5px solid #b2ffe1;
+        margin: 0 45px;
     }
 
     header {
-        margin-right: 5px;
-        margin-left: 5px;
+        padding-top: 1px;
+        margin: 0 -45px;
     }
 
-    h2{
-        margin-top: 40px;
+    .nav {
+        margin-top: -55px;
     }
 
-    .button {
+    .nav-links {
+        margin: 0 -45px;
+    }
+
+    .nav ul li{
+        font-size: 50px;
+    }
+    
+    #pfp {
+        z-index: 0;
+        position: absolute;
+        top: 25.75rem;
+        left: 2.5rem;
+        height: 300px;
+        width: 300px;
+        float: right;
+        border-radius: 0;
+    }
+    .square {
+        width: 22rem;
+        height: 21rem;
+        float: left;
+    }
+
+    .bio-desc, .description {
+        font-size: 32px;
+        line-height: 2em;
+    }
+
+    .projects-title {
+        background-color: #ffb2c1;
+        margin-right: -45px;
+        margin-left: -45px;
+    }
+
+    .bio, .projects-title{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .buttons {
         margin-top: 25px;
         width: 180px;
         height: 45px;
         font-size: 28px;
     }
 
-    .desc h5 {
-        font-size: 50px;
+    footer {
+        margin-left: -45px;
+        margin-right: -45px;
     }
 
-}
-
-@media screen and (min-width: 1439px) {
-    #about-me, #projects{
-        margin-bottom: 0;
+    .contact {
+        padding-top:10vh;
+        height: 83vh;
     }
 
-    html {
-        height: 100%;
+    #link-logo {
+        width: 30%;
     }
-
-    body {
-        font-size: 42px;
-        height: 100%;
-    }
-    main, #pfp, footer {
-        margin-left: 100px;
-    }
-
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links li a{
-        font-size: 24px;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .first {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        bottom: 0;
-        position: fixed;
-        background-color: #b2ffe1;
-    }
-    .second {
-        width: 100px;
-        height: inherit;
-        right: auto;
-        top: 120px;
-        bottom: 0;
-        position: fixed;
-    }
-    section h1 {
-        height: 120px;
-        position:sticky;
-        background-color: #b2d0ff;
-        top:0px;
-        margin: 0 auto;
-        padding-bottom: 6% 0;
-        z-index: 1;
-        border-bottom: 1px solid black;
-    }
-
-    section {
-        border: 1px solid black;
-    }
-
-    p {
-        position: relative;
-        margin-top: 45px;
-        font-size: 32px;
-        line-height: 2em;
-        word-spacing: 145%;
-    }
-
-    .about-me p{
-        padding-top: 180px;
-    }
-
-    .square {
-        width: 100px;
-        height: 80px;
-        position: relative;
-
-    }
-
-    .img {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100rem;
-    }
-
-    #pfp {
-        top: 32rem;
-        position: absolute;
-        border-radius: 0;
-        border: 5px solid #b2ffe1;
-    }
-
-    header {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-
-    h2{
-        margin-top: 40px;
-    }
-
-    .button {
-        margin-top: 25px;
-        width: 180px;
-        height: 45px;
-        font-size: 28px;
-    }
-
-    .desc h5 {
-        font-size: 50px;
+    
+    #github-logo {
+        width: 25%;
     }
 }

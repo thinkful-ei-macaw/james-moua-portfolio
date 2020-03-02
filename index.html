@@ -5,119 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Moua's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
 </head>
 <body>
-        <nav class="first" role="navigation" aria-label="About Me and Projects">
-            <ul class="links" aria-level="1">
-                <li aria-level="2"><a href="#about-me">About Me</a></li>
-                <li aria-level="2"><a href="#projects">Projects</a></li>
+    <header class="header">
+        <img src="img/Temp PFP.jpg" alt="Photo of James" id="pfp">
+        <h1 class="heading">Hi, I'm James. I am a software development ethusist</h1>
+    </header>
+
+    <main>
+        <nav class="nav" aria-label="Main">
+            <ul class="nav-links" role="list">
+                <li role="listitem">
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li role="listitem">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li role="listitem">
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
-        <div class="img" role="img" aria-label="James's profile picture">
-            <img id="pfp" src="img/Temp PFP.jpg" alt="James's profile picture">
-        </div>
-        <nav class="second" role="navigation" aria-label="Contact Information">
-            <ul class="links" aria-level="1">
-                <li aria-level="2"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-    <main role="main">
-        <header role="heading">Hi, I'm James. I am a software development enthusiast</header>
-
-        <nav id="about-me" aria-labelledby="about-me"></nav>
+        <nav id="about-me"></nav>
         <section class="about-me">
-            <h1 role="heading">About Me</h1>
+            <h2 class="bio">About Me</h2>
             <div class="square"></div>
-            <p aria-level="1">I am a current student of the Engineering Immersion Bootcamp at Thinkful, studying about various web development subjects such as Interactive Web Apps, Asynchronous web apps, Client-side programming with React, Server-side programmming with Node and Postgres, and Authentication with JWT.
+            <p class="bio-desc">
+                I am a current student of the Engineering Immersion Bootcamp at Thinkful,
+                studying about various web development subjects such as Interactive Web Apps, 
+                Asynchronous web apps, Client-side programming with React, Server-side programmming with Node and Postgres, and Authentication with JWT.
                 <br/>
                 <br/>
-                I love and hate coding. Coding did not cross my mind until I saw that it could solve most problems and make most ideas come to life. I was amazed by thefact that a programmer can develop projects which could change people's lives and their own career. After learning how to code for some time now, I came to understand that coding is difficult, but also comprehensible over time as you learn more about coding and its nature. Sometimes I would get overwhelmingly excited about solving a coding obstacle that prevented me from finishing the project that I was working on. Learning that I can code, I set my goals to have a skillset for the current job market, preparing myself to work alongside other developers and pursue a career as a programmer.
+                I love and hate coding. Coding did not cross my mind until I saw that it could solve most problems and make most ideas come to life.
+                I was amazed by thefact that a programmer can develop projects which could change people's lives and their own career. 
+                After learning how to code for some time now, I came to understand that coding is difficult, 
+                but also comprehensible over time as you learn more about coding and its nature. Sometimes I would get overwhelmingly excited about solving 
+                a coding obstacle that prevented me from finishing the project that I was working on. Learning that I can code, 
+                I set my goals to have a skillset for the current job market, preparing myself to work alongside other developers and pursue a career as a programmer.
                 <br/>
                 <br/>
-                When I'm not coding, I'm often found on my computer watching Japanese Animated TV series (Anime), updating my music playlist, playing video games, working out, or studying topics which intrigue me such as stocks trading or investing. Even though I do not have background in techonology, I am still a lifelong learner. As a lifelong learner, I look forward to coding, learning more about coding, and working on projects with coding.
+                When I'm not coding, I'm often found on my computer watching Japanese Animated TV series (Anime), updating my music playlist, 
+                playing video games, working out, or studying topics which intrigue me such as stocks trading or investing. 
+                Even though I do not have background in techonology, I am still a lifelong learner. As a lifelong learner, 
+                I look forward to coding, learning more about coding, and working on projects with coding.
             </p>
         </section>
-        
-        <nav id="projects" aria-labelledby="projects"></nav>
-        <section class="project-container">
-            <h1 role="heading">Projects</h1>
-
-            <div class="project" aria-roledescription="showcased project">
-                <h2 aria-level="1" aria-label="Quiz App">Quiz App</h2>
-
-                <div class="fling-minislide" aria-level="1" aria-roledescription="carousel">
-                    <img aria-level="2" src="img/quiz/Math Quiz - Fail.JPG" alt="Slide 6" />
-                    <img aria-level="2" src="img/quiz/Math Quiz - Passed.JPG" alt="Slide 5" />
-                    <img aria-level="2" src="img/quiz/Math Quiz - Wrong.JPG" alt="Slide 4" />
-                    <img aria-level="2" src="img/quiz/Math Quiz - Question.JPG" alt="Slide 3" />     
-                    <img aria-level="2" src="img/quiz/Math Quiz - Correct.JPG" alt="Slide 2" />
-                    <img aria-level="2" src="img/quiz/Math Quiz - Start.JPG" alt="Slide 1" />
-                </div>
-
-                <div class="desc" aria-level="1">
-                    <p aria-level="2" aria-label="Project Description">Project Description:
-                        Create an App that renders a quiz for the user. The user should able to start the quiz, answer a question, receive feedback whether their answer was correct, receive their total score, receive feedback whether they passed, and restart the quiz.
-                        <br/>
-                        <br/>
-                        This project should only use javascript generate templates and not have any html code in the html file.
+        <nav id="projects"></nav>
+        <section class="projects">
+            <h2 class="projects-title">Projects</h2>
+            <section class="projects-container">
+                <div class="project-desc" role="article">
+                    <h2 class="project-title">Project Title: <br/> Quiz App</h2>
+                    <img role="img" src="img/quiz/MathQuiz-Question.JPG" alt="Quiz App img" class="project-img">
+                    <p class="description">
+                    Project Description: Create an App that renders a quiz for the user. 
+                    The user should able to start the quiz, answer a question, receive feedback whether their answer was correct, receive their total score, 
+                    receive feedback whether they passed, and restart the quiz. 
+                    <br/>
+                    <br/>
+                    Skills:
+                    <br/>
+                    Javascript, JQuery, HTML5, CSS3, NPM
                     </p>
                 </div>
-
-                <div class="links-repo" aria-level="1">
-                    <button role="button" aria-pressed="false" aria-level="2" ype="button" onclick='window.open("https://github.com/thinkful-ei-macaw/quizzapp2-13-SJ")' class="button">Repo</button>
-                    <button role="button" aria-pressed="false" aria-level="2" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/quizzapp2-13-SJ/")' class="button">Live Page</button>
-                </div>
-            </div>
-
-            <div class="project" aria-roledescription="showcased project">
-                <h2 aria-level="1" aria-label="Bookmarks App">Bookmarks App</h2>
-
-                <div class="fling-minislide-two" aria-level="1" aria-roledescription="carousel">
-                    <img aria-level="2" src="img/bookmarks/Bookmarks - Add New.JPG" alt="Slide 5" />
-                    <img aria-level="2" src="img/bookmarks/Bookmarks - Edit.JPG" alt="Slide 4" />
-                    <img aria-level="2" src="img/bookmarks/Bookmarks - Clicked.JPG" alt="Slide 3" />     
-                    <img aria-level="2" src="img/bookmarks/Bookmarks - Filter.JPG" alt="Slide 2" />
-                    <img aria-level="2" src="img/bookmarks/Bookmarks - Landing.JPG" alt="Slide 1" />
-                </div>
-
-                <div class="desc" aria-level="1">
-                    <p aria-level="2" aria-label="Project Description">Project Description:
-                        Create an App that uses Thinkful's bookmark's API to store and send user's bookmarks. The user should be able to add new bookmarks to the list, edit a bookmark that has previously been added to the list, delete a bookmark from the list. The user should also be able to see validations to avoid empty inputs, the page updates while information is being submitted, responsive design being added to different viewports, and a filter option that displays all ratings greater than or equal to selected rating.
+                <section class="project-buttons">
+                    <button aria-pressed="false" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/quizzapp2-13-SJ")' class="buttons">Repo</button>
+                    <button aria-pressed="false" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/quizzapp2-13-SJ/")' class="buttons">Live Page</button>
+                </section>
+            </section>
+            <section class="projects-container">
+                <div class="project-desc">
+                    <h2 class="project-title">Project Title:<br/> Bookmarks App</h2>
+                    <img role="img" src="img/bookmarks/Bookmarks - Filter.JPG" alt="Bookmarks App img" class="project-img">
+                    <p class="description">
+                        Project Description: Create an App that uses Thinkful's bookmark's API to store and send user's bookmarks. 
+                        The user should be able to add new bookmarks to the list, edit a bookmark that has previously been added to the list,
+                        delete a bookmark from the list. The user should also be able to see validations to avoid empty inputs, 
+                        the page updates while information is being submitted, responsive design being added to different viewports, 
+                        and a filter option that displays all ratings greater than or equal to selected rating. 
                         <br/>
                         <br/>
-                        This project was built using webpack, git subtree method, and javascript modules without having any html code in the html file.
-                        </p>
+                        Skills:
+                        <br/>
+                        Javascript, JQuery, HTML, CSS, NPM
+                    </p>
                 </div>
-
-                <div class="links-repo" aria-level="1">
-                    <button role="button" aria-pressed="false" aria-level="2" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/JamesMoua-bookmarks-app/tree/gh-pages")' class="button">Repo</button>
-                    <button role="button" aria-pressed="false" aria-level="2" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/JamesMoua-bookmarks-app/")' class="button">Live Page</button>
-                </div>
-            </div>
+                <section class="project-buttons">
+                    <button role="button" aria-pressed="false" type="button" onclick='window.open("https://github.com/thinkful-ei-macaw/JamesMoua-bookmarks-app/tree/gh-pages")' class="buttons">Repo</button>
+                    <button role="button" aria-pressed="false" type="button" onclick='window.open("https://thinkful-ei-macaw.github.io/JamesMoua-bookmarks-app/")' class="buttons">Live Page</button>
+                </section>
+            </section>
         </section>
-
-        <nav id="contact" aria-labelledby="contact"></nav>
-        <section class="contact" role="contentinfo">
-            <h1 role="heading">Contact</h1>
-            <div class="contact-form">
-                <h2 aria-level="1">Sorry, the form is broken</h2>
-                <h3 aria-level="1">But you can contact me at <a href="mailto:Smoua1558@gmail.com?Subject=Inquiry">Smoua1558@gmail.com</a>
-                    <br>
-                    <br>
-                    or at the links provided below
-                </h3>
+        <nav id="contact"></nav>
+        <section class="contact">
+                <h2 class="contact-title">Contact</h2>
+            <div class="contact-container" role="contentinfo">
+                <h2 class="contact-desc">Contact me at <a href="mailto:Smoua1558@gmail.com">Smoua1558@gmail.com</a></h2>
             </div>
         </section>
     </main>
-
-    <footer role="contentinfo" class="content-info">
-        <section class="logos">
-            <a role="button" aria-pressed="false" aria-level="1" onclick="window.open('https://www.linkedin.com/in/james-moua-b16a33185/')"><img src="img/LI-Logo.png" alt="linkedin logo"></a>
-            <a role="button" aria-pressed="false" aria-level="1" onclick="window.open('https://github.com/huehealer')"><img src="img/GitHub_Logo.png" alt="github logo"></a>
+    
+    <footer>
+        <section class="links">
+            <a onclick="window.open('https://www.linkedin.com/in/james-moua-b16a33185/')"><img role="link" src="img/LI-Logo.png" alt="Linkedin Logo" id="link-logo"></a>
+            <a onclick="window.open('https://github.com/huehealer')"><img role="link" src="img/GitHub_Logo.png" alt="Github Logo" id="github-logo"></a>
         </section>
-        <p>&copy; James Moua</p>
+        <p class="copyright-symbol">&copy; James Moua 2020</p>
     </footer>
 </body>
 </html>

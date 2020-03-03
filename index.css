@@ -67,7 +67,7 @@ body {
     text-justify: inter-word;
     font-weight: 550;
     line-height: 1.5em;
-    word-spacing: 145%;
+    word-spacing: 130%;
 }
 
 .projects-title {
@@ -257,7 +257,7 @@ footer {
 
     .bio-desc, .description {
         font-size: 28px;
-        line-height: 2em;
+        line-height: 1.5em;
     }
 
     .projects-title {

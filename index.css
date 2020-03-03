@@ -63,11 +63,11 @@ body {
 }
 
 .bio-desc, .description {
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     font-weight: 550;
     line-height: 1.5em;
-    word-spacing: 145%;
+    word-spacing: 170%;
 }
 
 .projects-title {
@@ -87,9 +87,10 @@ body {
 
 .buttons {
     background-color: #b2ffe1;
+    text-decoration: none;
     width: 100px;
     height: 25px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700px;
     border-radius: 5px;
     border: none;
@@ -135,7 +136,7 @@ footer {
     width: 50%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
     body {
         font-size: 20px;
         margin: 0 45px;
@@ -170,7 +171,7 @@ footer {
     }
     .square {
         width: 20rem;
-        height: 20rem;
+        height: 25rem;
         float: left;
     }
 
@@ -274,7 +275,7 @@ footer {
         margin-top: 25px;
         width: 180px;
         height: 45px;
-        font-size: 28px;
+        font-size: 32px;
     }
 
     footer {
